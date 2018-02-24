@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="436.0" prefWidth="499.0" style="-fx-background-color: #2B89E0;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bookingfx.AboutController">
+   <children>
+      <ImageView fitHeight="135.0" fitWidth="146.0" layoutX="182.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Ellipse%201.png" />
+         </image>
+      </ImageView>
+      <MaterialDesignIconView fx:id="closeIcon" fill="WHITE" glyphName="CLOSE" layoutX="462.0" layoutY="31.0" onMouseClicked="#closeStage" size="26.0" />
+      <VBox alignment="CENTER_LEFT" layoutX="133.0" layoutY="218.0" spacing="2.0">
+         <children>
+            <Label text="Dan Mlayah" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="PENCIL" size="22.0" wrappingWidth="42.428571701049805" />
+               </graphic>
+            </Label>
+            <Label text="danmlayah@gmail.com" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="ENVELOPE_ALT" size="22.0" wrappingWidth="42.428571701049805" />
+               </graphic>
+            </Label>
+            <Label text="+254717160344" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="PHONE" size="26.0" wrappingWidth="42.428571701049805" />
+               </graphic>
+            </Label>
+            <Label text="Nairobi, Kenya" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="MAP_MARKER" size="22.0" wrappingWidth="42.428571701049805" />
+               </graphic>
+            </Label>
+            <Label text="Software Developer" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="SUITCASE" size="22.0" wrappingWidth="42.428571701049805" />
+               </graphic>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

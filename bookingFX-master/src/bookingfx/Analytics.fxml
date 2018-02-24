@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<StackPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bookingfx.AnalyticsController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1000.0" stylesheets="@style.css">
+         <children>
+            <PieChart fx:id="pieBookings" focusTraversable="true" layoutX="21.0" layoutY="66.0" prefHeight="187.0" prefWidth="231.0" styleClass="card" />
+            <AnchorPane prefHeight="57.0" prefWidth="1000.0" styleClass="custom-toolbar">
+               <effect>
+                  <DropShadow height="6.18" radius="1.7875" width="2.97" />
+               </effect>
+               <children>
+                  <Text fill="WHITE" layoutX="77.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="System Analytics" wrappingWidth="181.13671875">
+                     <font>
+                        <Font name="Roboto Medium" size="20.0" />
+                     </font>
+                  </Text>
+                  <HBox fx:id="hoxImages" alignment="CENTER" layoutX="877.0" layoutY="18.0" spacing="20.0">
+                     <children>
+                        <ImageView fx:id="imgInfo" fitHeight="20.0" fitWidth="20.0" onMouseClicked="#showInfo" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/Circle%20Info%20-%2001.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="imgHome" fitHeight="20.0" fitWidth="20.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#goHome" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/Home.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <MaterialDesignIconView fx:id="iconClose" fill="WHITE" glyphName="CLOSE" onMouseClicked="#closeStage" size="26.0" />
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+            <Pane layoutX="21.0" layoutY="268.0" prefHeight="196.0" prefWidth="231.0" styleClass="card">
+               <children>
+                  <Text layoutX="13.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bookings  Preferences" wrappingWidth="134.00000619888306" />
+                  <VBox layoutX="13.0" layoutY="43.0" spacing="10.0">
+                     <children>
+                        <VBox>
+                           <children>
+                              <Text fill="#4a4a4a" strokeType="OUTSIDE" strokeWidth="0.0" text="Buses">
+                                 <font>
+                                    <Font name="Roboto Light" size="12.0" />
+                                 </font>
+                              </Text>
+                              <ProgressBar prefWidth="200.0" progress="0.87" styleClass="success" />
+                           </children>
+                        </VBox>
+                        <VBox>
+                           <children>
+                              <Text fill="#4a4a4a" strokeType="OUTSIDE" strokeWidth="0.0" text="Trains">
+                                 <font>
+                                    <Font name="Roboto Light" size="12.0" />
+                                 </font>
+                              </Text>
+                              <ProgressBar prefWidth="200.0" progress="0.74" styleClass="danger" />
+                           </children>
+                        </VBox>
+                        <VBox>
+                           <children>
+                              <Text fill="#4a4a4a" strokeType="OUTSIDE" strokeWidth="0.0" text="Planes">
+                                 <font>
+                                    <Font name="Roboto Light" size="12.0" />
+                                 </font>
+                              </Text>
+                              <ProgressBar prefWidth="200.0" progress="0.44" styleClass="info" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+               </children>
+            </Pane>
+            <Pane layoutX="275.0" layoutY="269.0" prefHeight="196.0" prefWidth="231.0" styleClass="card">
+               <children>
+                  <Text layoutX="13.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Revenue Influx" wrappingWidth="106.00000619888306" />
+                  <VBox layoutX="13.0" layoutY="43.0" spacing="10.0">
+                     <children>
+                        <VBox>
+                           <children>
+                              <Text fill="#4a4a4a" strokeType="OUTSIDE" strokeWidth="0.0" text="Buses">
+                                 <font>
+                                    <Font name="Roboto Light" size="12.0" />
+                                 </font>
+                              </Text>
+                              <ProgressBar prefWidth="200.0" progress="0.87" styleClass="warning" />
+                           </children>
+                        </VBox>
+                        <VBox>
+                           <children>
+                              <Text fill="#4a4a4a" strokeType="OUTSIDE" strokeWidth="0.0" text="Trains">
+                                 <font>
+                                    <Font name="Roboto Light" size="12.0" />
+                                 </font>
+                              </Text>
+                              <ProgressBar prefWidth="200.0" progress="0.74" styleClass="info" />
+                           </children>
+                        </VBox>
+                        <VBox>
+                           <children>
+                              <Text fill="#4a4a4a" strokeType="OUTSIDE" strokeWidth="0.0" text="Planes">
+                                 <font>
+                                    <Font name="Roboto Light" size="12.0" />
+                                 </font>
+                              </Text>
+                              <ProgressBar prefWidth="200.0" progress="0.44" styleClass="success" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+               </children>
+            </Pane>
+            <HBox layoutX="19.0" layoutY="499.0" prefHeight="80.0" prefWidth="973.0" spacing="20.0">
+               <children>
+                  <Pane prefHeight="80.0" prefWidth="231.0" style="-fx-background-color: #00C0EF;" styleClass="card">
+                     <children>
+                        <Pane layoutX="12.0" layoutY="-24.0" prefHeight="42.0" prefWidth="58.0" style="-fx-background-color: #009ABF;" styleClass="card">
+                           <children>
+                              <FontAwesomeIconView fill="WHITE" glyphName="AREA_CHART" layoutX="9.0" layoutY="31.0" size="28.0" textAlignment="CENTER" wrappingWidth="40.833981707692146" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="10.0" layoutY="10.0" prefHeight="80.0" prefWidth="231.0" style="-fx-background-color: #00A65A;" styleClass="card">
+                     <children>
+                        <Pane layoutX="12.0" layoutY="-24.0" prefHeight="42.0" prefWidth="58.0" style="-fx-background-color: #008D4D;" styleClass="card">
+                           <children>
+                              <FontAwesomeIconView fill="WHITE" glyphName="NEWSPAPER_ALT" layoutX="9.0" layoutY="31.0" size="28.0" textAlignment="CENTER" wrappingWidth="40.833981707692146" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="241.0" layoutY="10.0" prefHeight="80.0" prefWidth="231.0" style="-fx-background-color: #F39C12;" styleClass="card">
+                     <children>
+                        <Pane layoutX="12.0" layoutY="-24.0" prefHeight="42.0" prefWidth="58.0" style="-fx-background-color: #CF850F;" styleClass="card">
+                           <children>
+                              <FontAwesomeIconView fill="WHITE" glyphName="BAR_CHART_ALT" layoutX="9.0" layoutY="30.0" size="28.0" textAlignment="CENTER" wrappingWidth="40.833981707692146" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="472.0" layoutY="10.0" prefHeight="80.0" prefWidth="231.0" style="-fx-background-color: #DD4B39;" styleClass="card">
+                     <children>
+                        <Pane layoutX="12.0" layoutY="-24.0" prefHeight="42.0" prefWidth="58.0" style="-fx-background-color: #BC4031;" styleClass="card">
+                           <children>
+                              <FontAwesomeIconView fill="WHITE" glyphName="BARCODE" layoutX="8.0" layoutY="30.0" size="28.0" textAlignment="CENTER" wrappingWidth="40.833981707692146" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+            <Pane layoutX="517.0" layoutY="268.0" prefHeight="196.0" prefWidth="231.0" styleClass="card">
+               <children>
+                  <Text layoutX="13.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Local towns frequented" wrappingWidth="155.00000619888306" />
+                  <VBox layoutX="13.0" layoutY="43.0" spacing="10.0">
+                     <children>
+                        <VBox>
+                           <children>
+                              <Text fill="#4a4a4a" strokeType="OUTSIDE" strokeWidth="0.0" text="Nairobi">
+                                 <font>
+                                    <Font name="Roboto Light" size="12.0" />
+                                 </font>
+                              </Text>
+                              <ProgressBar maxHeight="-Infinity" minHeight="-Infinity" prefHeight="10.0" prefWidth="200.0" progress="0.87" styleClass="success" />
+                           </children>
+                        </VBox>
+                        <VBox layoutX="10.0" layoutY="10.0">
+                           <children>
+                              <Text fill="#4a4a4a" strokeType="OUTSIDE" strokeWidth="0.0" text="Mombasa">
+                                 <font>
+                                    <Font name="Roboto Light" size="12.0" />
+                                 </font>
+                              </Text>
+                              <ProgressBar maxHeight="-Infinity" minHeight="-Infinity" prefHeight="10.0" prefWidth="200.0" progress="0.71" styleClass="primary" />
+                           </children>
+                        </VBox>
+                        <VBox layoutX="10.0" layoutY="46.0">
+                           <children>
+                              <Text fill="#4a4a4a" strokeType="OUTSIDE" strokeWidth="0.0" text="Eldoret">
+                                 <font>
+                                    <Font name="Roboto Light" size="12.0" />
+                                 </font>
+                              </Text>
+                              <ProgressBar maxHeight="-Infinity" minHeight="-Infinity" prefHeight="10.0" prefWidth="200.0" progress="0.45" styleClass="info" />
+                           </children>
+                        </VBox>
+                        <VBox layoutX="10.0" layoutY="82.0">
+                           <children>
+                              <Text fill="#4a4a4a" strokeType="OUTSIDE" strokeWidth="0.0" text="Kiambu">
+                                 <font>
+                                    <Font name="Roboto Light" size="12.0" />
+                                 </font>
+                              </Text>
+                              <ProgressBar maxHeight="-Infinity" minHeight="-Infinity" prefHeight="10.0" prefWidth="200.0" progress="0.36" styleClass="warning" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

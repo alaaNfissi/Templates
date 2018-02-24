@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="parentContainer" prefHeight="650.0" prefWidth="1100.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bookingfx.mainController">
+   <children>
+      <AnchorPane prefHeight="278.0" prefWidth="1100.0" style="-fx-background-color: #2981BD;">
+         <children>
+            <Label layoutX="-1.0" layoutY="60.0" maxHeight="-Infinity" minHeight="-Infinity" opacity="0.3" prefHeight="3.0" prefWidth="1103.0" style="-fx-background-color: #8aefff;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+            <Pane layoutX="388.0" layoutY="21.0" prefHeight="189.0" prefWidth="325.0" style="-fx-background-color: #3196DE; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);">
+               <children>
+                  <HBox alignment="CENTER" layoutX="101.0" layoutY="146.0" spacing="30.0">
+                     <children>
+                        <FontAwesomeIconView fill="WHITE" glyphName="PLANE" opacity="0.57" size="28.0" />
+                        <FontAwesomeIconView fill="WHITE" glyphName="TRAIN" opacity="0.57" size="24.0" />
+                        <FontAwesomeIconView fill="WHITE" glyphName="BUS" opacity="0.57" size="24.0" />
+                     </children>
+                  </HBox>
+                  <ImageView fitHeight="94.0" fitWidth="286.0" layoutX="23.0" layoutY="18.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../images/Asset%203@2x.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="#2981bd" layoutX="71.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BOOKING" textAlignment="CENTER" wrappingWidth="183.9999884366989">
+                     <font>
+                        <Font name="Roboto Medium" size="25.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="121.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="system" textAlignment="CENTER" wrappingWidth="83.45700800418854">
+                     <font>
+                        <Font name="Roboto Medium" size="14.0" />
+                     </font>
+                  </Text>
+               </children></Pane>
+            <MaterialDesignIconView fill="#74efff" glyphName="BIKE" layoutX="100.0" layoutY="232.0" opacity="0.55" rotate="-28.1" size="28.0" strokeDashOffset="9.0" strokeType="OUTSIDE" strokeWidth="6.0" />
+            <MaterialDesignIconView fill="#74efff" glyphName="AV_TIMER" layoutX="336.0" layoutY="260.0" opacity="0.55" size="28.0" strokeDashOffset="9.0" strokeType="OUTSIDE" strokeWidth="6.0" />
+            <MaterialDesignIconView fill="#74efff" glyphName="REMOTE" layoutX="223.0" layoutY="185.0" opacity="0.55" rotate="-53.1" size="28.0" strokeDashOffset="9.0" strokeType="OUTSIDE" strokeWidth="6.0" />
+            <MaterialDesignIconView fill="#74efff" glyphName="SEAT_LEGROOM_EXTRA" layoutX="689.0" layoutY="246.0" opacity="0.55" rotate="15.9" size="28.0" strokeDashOffset="9.0" strokeType="OUTSIDE" strokeWidth="6.0" />
+            <MaterialDesignIconView fill="#74efff" glyphName="WALK" layoutX="787.0" layoutY="151.0" opacity="0.55" size="28.0" strokeDashOffset="9.0" strokeType="OUTSIDE" strokeWidth="6.0" />
+            <MaterialDesignIconView fx:id="iconClose" fill="WHITE" glyphName="CLOSE" layoutX="1058.0" layoutY="39.0" onMouseClicked="#hideStage" size="28.0" strokeDashOffset="9.0" strokeType="OUTSIDE" strokeWidth="6.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </MaterialDesignIconView>
+            <FontAwesomeIconView fill="#8aefff" glyphName="PLANE" layoutX="1040.0" layoutY="226.0" opacity="0.57" size="22.0" />
+            <FontAwesomeIconView fill="#8aefff" glyphName="TRAIN" layoutX="885.0" layoutY="206.0" opacity="0.57" size="22.0" />
+            <FontAwesomeIconView fill="#8aefff" glyphName="CIRCLE" layoutX="894.0" layoutY="69.0" opacity="0.3" size="22.0" />
+            <FontAwesomeIconView fill="#8aefff" glyphName="CIRCLE" layoutX="207.0" layoutY="69.0" opacity="0.3" size="22.0" />
+         </children>
+      </AnchorPane>
+      <Circle fill="#2981bd" layoutX="552.0" layoutY="260.0" radius="47.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <MaterialDesignIconView fill="#74efff" glyphName="COMPASS" layoutX="538.0" layoutY="269.0" opacity="0.55" size="28.0" strokeDashOffset="9.0" strokeType="OUTSIDE" strokeWidth="6.0" />
+      <HBox fx:id="menusHolder" alignment="CENTER" layoutX="71.0" layoutY="356.0" prefHeight="237.0" prefWidth="959.0" spacing="50.0" AnchorPane.leftAnchor="71.0" AnchorPane.rightAnchor="70.0">
+         <children>
+            <AnchorPane fx:id="PLANE" onMouseClicked="#openPlanes">
+               <children>
+                  <Group fx:id="groupPlanes">
+                     <children>
+                        <Pane layoutX="6.0" layoutY="41.0" prefHeight="189.0" prefWidth="184.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-background-color: rgb(17, 158, 132); -fx-background-radius: 8;">
+                           <children>
+                              <Label alignment="CENTER" layoutX="62.0" layoutY="-32.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: rgb(47, 143, 212,0.8); -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 4.0, 0.3, 0.0,0.5); -fx-border-radius: 60; -fx-background-radius: 60;" textAlignment="CENTER">
+                                 <graphic>
+                                    <FontAwesomeIconView fill="#a4fffc" glyphName="PLANE" size="28.0" />
+                                 </graphic>
+                              </Label>
+                              <Text fill="#a4fffc" layoutX="61.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Planes" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Roboto Medium" size="20.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="WHITE" layoutX="5.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage plane bookings" textAlignment="CENTER" wrappingWidth="172.298828125">
+                                 <font>
+                                    <Font name="Roboto Medium" size="14.0" />
+                                 </font>
+                              </Text>
+                              <Label alignment="CENTER" contentDisplay="CENTER" layoutX="56.0" layoutY="127.0" minHeight="-Infinity" prefHeight="1.0" prefWidth="72.0" style="-fx-background-color: #a4fffc;" textAlignment="CENTER" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </Group>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="TRAIN" onMouseClicked="#openTrains">
+               <children>
+                  <Group fx:id="groupTrains">
+                     <children>
+                        <Pane layoutX="6.0" layoutY="39.0" prefHeight="189.0" prefWidth="184.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-background-color: #3196DE; -fx-background-radius: 8;">
+                           <children>
+                              <Label alignment="CENTER" layoutX="62.0" layoutY="-30.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: rgb(39, 58, 78,0.7); -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 4.0, 0.3, 0.0,0.5); -fx-border-radius: 60; -fx-background-radius: 60;" textAlignment="CENTER">
+                                 <graphic>
+                                    <FontAwesomeIconView fill="#a4fffc" glyphName="PLANE" size="28.0" />
+                                 </graphic>
+                              </Label>
+                              <Text fill="#a4fffc" layoutX="60.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Trains" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Roboto Medium" size="20.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="WHITE" layoutX="5.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage plane bookings" textAlignment="CENTER" wrappingWidth="172.298828125">
+                                 <font>
+                                    <Font name="Roboto Medium" size="14.0" />
+                                 </font>
+                              </Text>
+                              <Label alignment="CENTER" contentDisplay="CENTER" layoutX="56.0" layoutY="127.0" minHeight="-Infinity" prefHeight="1.0" prefWidth="72.0" style="-fx-background-color: #a4fffc;" textAlignment="CENTER" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </Group>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="BUS" onMouseClicked="#openBuses">
+               <children>
+                  <Group fx:id="groupBuses">
+                     <children>
+                        <Pane layoutX="6.0" layoutY="39.0" prefHeight="189.0" prefWidth="184.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-background-color: #293D52; -fx-background-radius: 8;">
+                           <children>
+                              <Label alignment="CENTER" layoutX="62.0" layoutY="-30.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: rgb(24, 181, 149,0.7); -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 4.0, 0.3, 0.0,0.5); -fx-border-radius: 60; -fx-background-radius: 60;" textAlignment="CENTER">
+                                 <graphic>
+                                    <FontAwesomeIconView fill="#a4fffc" glyphName="PLANE" size="28.0" />
+                                 </graphic>
+                              </Label>
+                              <Text fill="#a4fffc" layoutX="64.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Buses" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Roboto Medium" size="20.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="WHITE" layoutX="6.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage plane bookings" textAlignment="CENTER" wrappingWidth="172.298828125">
+                                 <font>
+                                    <Font name="Roboto Medium" size="14.0" />
+                                 </font>
+                              </Text>
+                              <Label alignment="CENTER" contentDisplay="CENTER" layoutX="56.0" layoutY="128.0" minHeight="-Infinity" prefHeight="1.0" prefWidth="72.0" style="-fx-background-color: #a4fffc;" textAlignment="CENTER" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </Group>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="ANALYTIC" onMouseClicked="#openAnalytics">
+               <children>
+                  <Group fx:id="groupTrains1">
+                     <children>
+                        <Pane layoutX="6.0" layoutY="39.0" prefHeight="189.0" prefWidth="184.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-background-color: rgb(140, 69, 172); -fx-background-radius: 8;">
+                           <children>
+                              <Label alignment="CENTER" layoutX="62.0" layoutY="-30.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: rgb(39, 58, 78,0.7); -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 4.0, 0.3, 0.0,0.5); -fx-border-radius: 60; -fx-background-radius: 60;" textAlignment="CENTER">
+                                 <graphic>
+                                    <FontAwesomeIconView fill="#a4fffc" glyphName="PLANE" size="28.0" />
+                                 </graphic>
+                              </Label>
+                              <Text fill="#a4fffc" layoutX="50.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Analytics" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Roboto Medium" size="20.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="WHITE" layoutX="6.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="View Analytics" textAlignment="CENTER" wrappingWidth="172.298828125">
+                                 <font>
+                                    <Font name="Roboto Medium" size="14.0" />
+                                 </font>
+                              </Text>
+                              <Label alignment="CENTER" contentDisplay="CENTER" layoutX="56.0" layoutY="127.0" minHeight="-Infinity" prefHeight="1.0" prefWidth="72.0" style="-fx-background-color: #a4fffc;" textAlignment="CENTER" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </Group>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

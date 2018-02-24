@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="576.0" prefWidth="992.0" stylesheets="@../bookingfx/style.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="planes.BookListsController">
+   <children>
+      <TableView fx:id="tableList" layoutX="8.0" layoutY="9.0" prefHeight="559.0" prefWidth="975.0">
+        <columns>
+          <TableColumn fx:id="colID" editable="false" prefWidth="64.0" text="TRIP ID" />
+          <TableColumn fx:id="colName1" editable="false" prefWidth="231.0" sortable="false" text="TRAVELLER NAMES" />
+            <TableColumn fx:id="colname2" editable="false" prefWidth="252.0" sortable="false" text="BOOKING PARTNER" />
+            <TableColumn fx:id="colOrigin" editable="false" prefWidth="102.0" sortable="false" text="ORIGIN" />
+            <TableColumn fx:id="colDestination" editable="false" prefWidth="102.0" sortable="false" text="DESTINATION" />
+            <TableColumn fx:id="colCost" editable="false" prefWidth="128.0" sortable="false" text="TRIP COST" />
+            <TableColumn fx:id="colRefundable" editable="false" prefWidth="94.0" sortable="false" text="REFUNDABLE" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

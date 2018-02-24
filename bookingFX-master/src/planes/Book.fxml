@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="576.0" prefWidth="992.0" stylesheets="@../bookingfx/style.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="planes.BookController">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="14.0" prefHeight="231.0" prefWidth="738.0" styleClass="card">
+         <children>
+            <Pane layoutX="6.0" layoutY="5.0" prefHeight="65.0" prefWidth="267.0" style="-fx-background-color: rgb(41, 61, 82,0.9); -fx-background-radius: 8;">
+               <children>
+                  <HBox alignment="CENTER" layoutX="29.0" layoutY="23.0" spacing="10.0">
+                     <children>
+                        <FontAwesomeIconView fill="#447dee" glyphName="PLUS" size="18.0" />
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Trip ID : TR09h84j833d2">
+                           <font>
+                              <Font name="FontAwesome Regular" size="17.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </HBox>
+               </children>
+            </Pane>
+            <Pane layoutX="279.0" layoutY="5.0" prefHeight="65.0" prefWidth="453.0" style="-fx-background-color: rgb(41, 61, 82,0.9); -fx-background-radius: 8;" />
+            <HBox alignment="CENTER" layoutX="25.0" layoutY="123.0" prefHeight="57.0" prefWidth="538.0" spacing="5.0">
+               <children>
+                  <VBox prefHeight="57.0" prefWidth="175.0">
+                     <children>
+                        <Text fill="#aeaeae" strokeType="OUTSIDE" strokeWidth="0.0" text="FROM COUNTRY" wrappingWidth="164.00000190734863">
+                           <font>
+                              <Font name="Roboto Medium" size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="5.0" />
+                           </VBox.margin>
+                        </Text>
+                        <JFXComboBox prefHeight="32.0" prefWidth="158.0" promptText="KENYA" />
+                     </children>
+                  </VBox>
+                  <Separator maxHeight="-Infinity" minHeight="-Infinity" orientation="VERTICAL" prefHeight="35.0" prefWidth="0.0" />
+                  <VBox prefHeight="57.0" prefWidth="175.0">
+                     <children>
+                        <Text fill="#aeaeae" strokeType="OUTSIDE" strokeWidth="0.0" text="FROM COUNTRY" wrappingWidth="164.00000190734863">
+                           <font>
+                              <Font name="Roboto Medium" size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="5.0" />
+                           </VBox.margin>
+                        </Text>
+                        <JFXComboBox prefHeight="32.0" prefWidth="158.0" promptText="SYCHELLES" />
+                     </children>
+                  </VBox>
+                  <Separator maxHeight="-Infinity" minHeight="-Infinity" orientation="VERTICAL" prefHeight="35.0" prefWidth="0.0" />
+                  <VBox prefHeight="57.0" prefWidth="175.0">
+                     <children>
+                        <Text fill="#aeaeae" strokeType="OUTSIDE" strokeWidth="0.0" text="ESTIMATE ARRIVAL" wrappingWidth="164.00000190734863">
+                           <font>
+                              <Font name="Roboto Medium" size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="5.0" />
+                           </VBox.margin>
+                        </Text>
+                        <JFXDatePicker fx:id="arrivalTime" prefHeight="30.0" prefWidth="170.0" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children></AnchorPane>
+      <HBox alignment="CENTER" layoutX="9.0" layoutY="257.0" prefHeight="308.0" prefWidth="971.0" spacing="20.0">
+         <children>
+            <AnchorPane prefHeight="308.0" prefWidth="476.0" styleClass="card">
+               <children>
+                  <HBox alignment="CENTER" layoutX="45.0" layoutY="79.0" prefHeight="56.0" prefWidth="394.0" spacing="10.0">
+                     <children>
+                        <VBox prefHeight="56.0" prefWidth="175.0">
+                           <children>
+                              <Text fill="#aeaeae" strokeType="OUTSIDE" strokeWidth="0.0" text="TRAVELLERS NAME" wrappingWidth="139.00000190734863">
+                                 <font>
+                                    <Font name="Roboto Medium" size="14.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <JFXTextField editable="false" maxWidth="206.0" minWidth="158.0" prefHeight="37.0" prefWidth="158.0" text="DAN MLAYAH">
+                                 <font>
+                                    <Font name="Roboto Medium" size="13.0" />
+                                 </font>
+                              </JFXTextField>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="56.0" prefWidth="175.0">
+                           <children>
+                              <Text fill="#aeaeae" strokeType="OUTSIDE" strokeWidth="0.0" text="CONTACT NO" wrappingWidth="139.00000190734863">
+                                 <font>
+                                    <Font name="Roboto Medium" size="14.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <JFXTextField editable="false" maxWidth="206.0" minWidth="158.0" prefHeight="37.0" prefWidth="158.0" text="+254717160344">
+                                 <font>
+                                    <Font name="Roboto Medium" size="13.0" />
+                                 </font>
+                              </JFXTextField>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <VBox layoutX="62.0" layoutY="154.0" prefHeight="57.0" prefWidth="352.0">
+                     <children>
+                        <Text fill="#aeaeae" strokeType="OUTSIDE" strokeWidth="0.0" text="TRAVELLERS EMAIL ADDRESS" wrappingWidth="220.00000190734863">
+                           <font>
+                              <Font name="Roboto Medium" size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                        </Text>
+                        <JFXTextField editable="false" maxWidth="349.0" minWidth="196.0" prefHeight="37.0" prefWidth="349.0" text="danmlayah@gmail.com">
+                           <font>
+                              <Font name="Roboto Medium" size="13.0" />
+                           </font>
+                        </JFXTextField>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="71.0" layoutY="222.0" prefHeight="57.0" prefWidth="349.0">
+                     <children>
+                        <Text fill="#aeaeae" strokeType="OUTSIDE" strokeWidth="0.0" text="BOOKING PARTNER" wrappingWidth="184.00000190734863">
+                           <font>
+                              <Font name="Roboto Medium" size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Text>
+                        <JFXComboBox prefHeight="32.0" prefWidth="337.0" promptText="AGGIE DAN" />
+                     </children>
+                  </VBox>
+                  <Pane layoutY="-2.0" prefHeight="53.0" prefWidth="476.0" style="-fx-background-color: #008F82; -fx-background-radius: 5 5 0 0;">
+                     <children>
+                        <FontAwesomeIconView fill="WHITE" glyphName="EXCLAMATION" layoutX="14.0" layoutY="31.0" size="18" />
+                        <Text fill="WHITE" layoutX="34.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Details capturing">
+                           <font>
+                              <Font name="Roboto Medium" size="14.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+               </children></AnchorPane>
+            <AnchorPane prefHeight="292.0" prefWidth="468.0" style="-fx-background-color: #F3F3F3;" styleClass="card">
+               <children>
+                  <ButtonBar layoutX="17.0" layoutY="241.0" prefHeight="53.0" prefWidth="437.0">
+                     <buttons>
+                        <JFXButton buttonType="RAISED" layoutX="304.0" layoutY="24.0" prefHeight="34.0" prefWidth="93.0" style="-fx-background-color: #EE4D39;" text="Clear" textFill="WHITE">
+                           <font>
+                              <Font name="Roboto Medium" size="13.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="TRASH_ALT" size="16.0" wrappingWidth="21.571428298950195" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton buttonType="RAISED" layoutX="286.0" layoutY="20.0" prefHeight="34.0" prefWidth="93.0" style="-fx-background-color: #f39c12;" text="Preview" textFill="WHITE">
+                           <font>
+                              <Font name="Roboto Medium" size="13.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="PENCIL_SQUARE_ALT" size="16.0" wrappingWidth="21.571428298950195" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton buttonType="RAISED" layoutX="183.0" layoutY="20.0" prefHeight="34.0" prefWidth="93.0" style="-fx-background-color: #008F82;" text="Revoke" textFill="WHITE">
+                           <font>
+                              <Font name="Roboto Medium" size="13.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="COMPRESS" size="16.0" wrappingWidth="20.714285850524902" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton buttonType="RAISED" layoutX="148.0" layoutY="20.0" prefHeight="34.0" prefWidth="93.0" style="-fx-background-color: #0081FF;" text="Save" textFill="WHITE">
+                           <font>
+                              <Font name="Roboto Medium" size="13.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="CHECK_SQUARE_ALT" size="16.0" wrappingWidth="21.571428298950195" />
+                           </graphic>
+                        </JFXButton>
+                     </buttons>
+                  </ButtonBar>
+                  <Pane prefHeight="209.0" prefWidth="468.0" style="-fx-background-color: #293D52; -fx-background-radius: 5 5 0 0;">
+                     <children>
+                        <HBox layoutX="41.0" layoutY="132.0">
+                           <children>
+                              <JFXCheckBox checkedColor="#5b8cff" prefHeight="17.0" prefWidth="120.0" text="Executive" textFill="#e0e2e4" unCheckedColor="WHITE">
+                                 <font>
+                                    <Font name="Roboto Medium" size="14.0" />
+                                 </font>
+                              </JFXCheckBox>
+                              <JFXCheckBox checkedColor="#5b8cff" layoutX="10.0" layoutY="10.0" prefHeight="17.0" prefWidth="120.0" text="Regular" textFill="#e0e2e4" unCheckedColor="WHITE">
+                                 <font>
+                                    <Font name="Roboto Medium" size="14.0" />
+                                 </font>
+                              </JFXCheckBox>
+                              <JFXCheckBox checkedColor="#5b8cff" layoutX="158.0" layoutY="10.0" prefHeight="17.0" prefWidth="120.0" text="Normal" textFill="#e0e2e4" unCheckedColor="WHITE">
+                                 <font>
+                                    <Font name="Roboto Medium" size="14.0" />
+                                 </font>
+                              </JFXCheckBox>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="40.0" layoutY="66.0">
+                           <children>
+                              <JFXCheckBox checkedColor="#5b8cff" prefHeight="17.0" prefWidth="120.0" text="ONE WAY" textFill="#e0e2e4" unCheckedColor="WHITE">
+                                 <font>
+                                    <Font name="Roboto Medium" size="14.0" />
+                                 </font>
+                              </JFXCheckBox>
+                              <JFXCheckBox checkedColor="#5b8cff" layoutX="10.0" layoutY="10.0" prefHeight="17.0" prefWidth="120.0" text="TO &amp; FRO" textFill="#e0e2e4" unCheckedColor="WHITE">
+                                 <font>
+                                    <Font name="Roboto Medium" size="14.0" />
+                                 </font>
+                              </JFXCheckBox>
+                           </children>
+                        </HBox>
+                        <Text fill="#c0fffc" layoutX="28.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Travel mod">
+                           <font>
+                              <Font name="Roboto Medium" size="17.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#c0fffc" layoutX="28.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ticket status">
+                           <font>
+                              <Font name="Roboto Medium" size="17.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+               </children></AnchorPane>
+         </children>
+      </HBox>
+      <AnchorPane layoutX="760.0" layoutY="14.0" prefHeight="151.0" prefWidth="218.0" style="-fx-background-color: #293D52;" styleClass="card">
+         <children>
+            <Text fill="#c0fffc" layoutX="14.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Payments">
+               <font>
+                  <Font name="Roboto Medium" size="17.0" />
+               </font>
+            </Text>
+            <JFXTextField focusColor="WHITE" labelFloat="true" layoutX="25.0" layoutY="58.0" maxWidth="182.0" minWidth="182.0" prefHeight="31.0" prefWidth="182.0" promptText="Amount in Kshs" style="-fx-text-fill: white;" unFocusColor="#d6f9ff">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXTextField>
+            <JFXCheckBox checkedColor="#5b8cff" layoutX="25.0" layoutY="105.0" prefHeight="17.0" prefWidth="148.0" text="Tax Inclusive" textFill="#e0e2e4" unCheckedColor="WHITE">
+               <font>
+                  <Font name="Roboto Medium" size="14.0" />
+               </font>
+            </JFXCheckBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="761.0" layoutY="178.0" prefHeight="65.0" prefWidth="218.0" styleClass="card">
+         <children>
+            <Text fill="#10a3f8" layoutX="14.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CASHBACK FAQ" textAlignment="CENTER" wrappingWidth="196.1367383003235">
+               <font>
+                  <Font name="Roboto Medium" size="20.0" />
+               </font>
+            </Text>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

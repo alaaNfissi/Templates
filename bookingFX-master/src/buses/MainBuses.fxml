@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1000.0" stylesheets="@../bookingfx/style.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="trains.MainTrainsController">
+   <children>
+      <AnchorPane prefHeight="680.0" prefWidth="1000.0">
+         <children>
+            <VBox layoutX="198.0" layoutY="36.0" prefHeight="680.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <AnchorPane prefHeight="96.0" prefWidth="1000.0" styleClass="custom-toolbar">
+                     <effect>
+                        <DropShadow height="6.18" radius="1.7875" width="2.97" />
+                     </effect>
+                     <children>
+                        <MaterialDesignIconView fx:id="iconDialog" fill="WHITE" glyphName="MENU" layoutX="30.0" layoutY="58.0" onMouseClicked="#openDialog" size="28.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </MaterialDesignIconView>
+                        <Text fill="WHITE" layoutX="77.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Buses" wrappingWidth="149.13671875">
+                           <font>
+                              <Font name="Roboto Medium" size="20.0" />
+                           </font>
+                        </Text>
+                        <HBox fx:id="hoxImages" alignment="CENTER" layoutX="758.0" layoutY="38.0" spacing="20.0">
+                           <children>
+                              <ImageView fx:id="imgInfo" fitHeight="20.0" fitWidth="20.0" onMouseClicked="#showInfo" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/Circle%20Info%20-%2001.png" />
+                                 </image>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ImageView>
+                              <ImageView fx:id="imgHome" fitHeight="20.0" fitWidth="20.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#goHome" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/Home.png" />
+                                 </image>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ImageView>
+                              <ImageView fx:id="imgExit" fitHeight="20.0" fitWidth="20.0" layoutX="35.0" layoutY="10.0" onMouseClicked="#exit" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/Exit%20-%2002.png" />
+                                 </image>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="864.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/Ellipse%201.png" />
+                           </image>
+                        </ImageView>
+                        <Text fill="WHITE" layoutX="922.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin">
+                           <font>
+                              <Font name="Roboto Light" size="14.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="584.0" prefWidth="1000.0">
+                     <children>
+                        <Pane fx:id="popUpPane" layoutX="-250.0" layoutY="128.0" prefHeight="130.0" prefWidth="227.0" styleClass="card">
+                           <children>
+                              <HBox fx:id="boxPopUpMenusHolder" alignment="TOP_CENTER" layoutX="11.0" layoutY="27.0" prefHeight="74.0" prefWidth="205.0" spacing="15.0">
+                                 <children>
+                                    <VBox fx:id="menuBook" alignment="CENTER" onMouseClicked="#showBookingNode" prefHeight="74.0" prefWidth="53.0" spacing="10.0">
+                                       <children>
+                                          <FontAwesomeIconView fill="#2e04b9" glyphName="PIED_PIPER_ALT" size="26" />
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Book" textAlignment="CENTER" wrappingWidth="38.859375">
+                                             <font>
+                                                <Font name="Roboto Medium" size="13.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                    </VBox>
+                                    <VBox fx:id="menuDetail" alignment="CENTER" onMouseClicked="#showDetailsNode" prefHeight="74.0" prefWidth="53.0" spacing="10.0">
+                                       <children>
+                                          <FontAwesomeIconView fill="#0eab30" glyphName="PENCIL_SQUARE" size="26" />
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Details">
+                                             <font>
+                                                <Font name="Roboto Medium" size="13.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                    </VBox>
+                                    <VBox fx:id="menuList" alignment="CENTER" onMouseClicked="#showListsNode" prefHeight="74.0" prefWidth="53.0" spacing="10.0">
+                                       <children>
+                                          <FontAwesomeIconView fill="#b81906" glyphName="LIST_UL" size="26" />
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="List">
+                                             <font>
+                                                <Font name="Roboto Medium" size="13.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </Pane>
+                        <AnchorPane fx:id="contentPane" layoutX="4.0" layoutY="4.0" prefHeight="576.0" prefWidth="992.0" />
+                     </children></AnchorPane>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
